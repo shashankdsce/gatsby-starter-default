@@ -1,0 +1,45 @@
+{
+  "name": "optus-pwa",
+  "description": "Optus PWA",
+  "version": "1.0.0",
+  "author": "Optus",
+  "dependencies": {
+    "firebase": "^4.11.0",
+    "gatsby": "^1.9.158",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-create-client-paths": "^1.0.8",
+    "gatsby-plugin-manifest": "^1.0.19",
+    "gatsby-plugin-offline": "^1.0.15",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-plugin-styled-components": "^2.0.6",
+    "react-helmet": "^5.2.0",
+    "react-sortable-hoc": "^0.6.8",
+    "short-id": "^0.1.0-1",
+    "styled-components": "^3.1.6"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint **/*.{js,jsx} --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run build && netlify deploy"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "prettier": "^1.10.2"
+  }
+}
