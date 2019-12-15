@@ -33,5 +33,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+    // Note: this plugin is coded to only work on production
+    resolve: `gatsby-plugin-subscribers`,
+    options: {
+      id: '03eb77bf-f731-473e-b760-cb2d2bd0d30f',
+    }
+  }
   ],
 };
