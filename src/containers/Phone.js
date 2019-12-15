@@ -34,10 +34,11 @@ class PhoneContainer extends Component {
     .get()
     .then(doc => {
         if (doc.exists) {
-        const { name, slug } = doc.data();
+
+        const { name, brand } = doc.data();
         this.setState({
             name,
-            slug
+            brand
         });
         } else {
         history.push('/404');
@@ -69,7 +70,7 @@ class PhoneContainer extends Component {
     return (
       <div>
         <div>{ this.state && <span>{this.state.name}</span> }</div>
-        <Button onClick={() => { this.addToOrder({ name: this.state.name, slug: this.state.slug }) }}>Add to cart</Button>
+        <Button onClick={() => { this.addToOrder({ name: this.state.name, brand: this.state.brand }) }}>Add to cart</Button>
       </div>
     );
   }
