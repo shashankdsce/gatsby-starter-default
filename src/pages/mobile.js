@@ -40,10 +40,10 @@ class MobilePage extends Component {
 
   createPhone = (phone) => {
     const { history } = this.props;
-    const data = phone.data();
+    const data = phone.data(), id = phone.id;
     const phoneid = data.name.replace(/\s/g,'');
-    return <div key={phoneid}>
-      <a href={`/phone/${phoneid}`} onClick={ (e) => { history.push(`/phone/${phoneid}`); e.preventDefault(); }}>{ data.name }</a>
+    return <div key={id}>
+      <a href={`/phone/${id}`} onClick={ (e) => { history.push(`/phone/${id}`); e.preventDefault(); }}>{ data.name }</a>
     </div>;
   }
 
